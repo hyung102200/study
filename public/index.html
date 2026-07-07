@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원달러 환율</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>원달러 환율</h1>
+        
+        <div class="date-selector">
+            <label for="startDate">시작 날짜:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">종료 날짜:</label>
+            <input type="date" id="endDate">
+            <button id="applyBtn">적용</button>
+            <button id="resetBtn">전체 기간 보기</button>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="exchangeRateChart"></canvas>
+        </div>
+        
+        <div class="footer">
+            <p>데이터 출처: usd2won.csv | 갱신: 일별</p>
+        </div>
+    </div>
+    
+    <script src="js/chart.js"></script>
+</body>
+</html>
